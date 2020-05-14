@@ -43,15 +43,13 @@ const SearchResults = () => {
           >
           </SearchInfo>
 
-          <div className="image-grid">
 
-            {data && data.items ?
+          {data && data.items ?
 
-              <ImageGrid items={data.items}></ImageGrid>
+            <ImageGrid items={data.items}></ImageGrid>
 
-              : null}
+            : null}
 
-          </div>
 
         </>
         : <p>...hleður</p>}

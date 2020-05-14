@@ -6,9 +6,11 @@ const ImageGrid = ({ items }) => {
 
   return (
     <Grid padding={window && window.innerWidth <= 750 ? "var(--smallPad) 0" : "var(--smallPad)"}>
-      {items.map((item, index) => (
-        <ResultBox key={index} item={item}></ResultBox>
-      ))}
+      <div className="grid">
+        {items.map((item, index) => (
+          <ResultBox key={index} item={item}></ResultBox>
+        ))}
+      </div>
     </Grid>
   )
 }
