@@ -36,4 +36,8 @@ export const Image = styled.img`
   width: 100%;
   object-fit: contain;
   justify-self: center;
+  @media (max-width: 650px) {
+    height: 100%;
+    width: auto;
+  }
 `
