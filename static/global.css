@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;800&display=swap');
+:root {
+  --smallPad: 25px;
+  --mediumPad: 50px;
+  --largePad: 125px;
+  --boxSize: 12.5rem;
+  --gray: #C4C4C4;
+  --lightGray: #F3F3F3;
+  --paragraphSize: 16px;
+  --mobile: 600px;
+  --tablet: 850px;
+}
+* {
+  font-family: 'Sen', sans-serif;
+}
+html, body, #__gatsby {
+  margin: 0;
+}
+p {
+  font-size: var(--paragraphSize);
+}
