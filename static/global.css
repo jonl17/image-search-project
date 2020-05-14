@@ -3,9 +3,12 @@
   --smallPad: 25px;
   --mediumPad: 50px;
   --largePad: 125px;
-  --boxSize: 12.5rem;
-  --gray: #C4C4C4;
-  --lightGray: #F3F3F3;
+  --boxSize: 20rem;
+  --gray: #000505;
+  --lightGray: lightgray;
+  --lighterGray: rgb(236, 234, 234);
+  --white: #FCFCFC;
+  --black: #000505;
   --paragraphSize: 16px;
   --mobile: 600px;
   --tablet: 850px;
@@ -15,7 +18,10 @@
 }
 html, body, #__gatsby {
   margin: 0;
+  height: 100%;
+  width: 100%;
 }
 p {
   font-size: var(--paragraphSize);
+  color: var(--black);
 }

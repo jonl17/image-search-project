@@ -5,6 +5,11 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: var(--smallPad);
+  p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
   .pagination-wrap {
     display: flex;
     justify-content: space-between;

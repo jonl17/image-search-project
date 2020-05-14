@@ -3,9 +3,9 @@ import useSearch from "../../hooks/useSearch"
 import { SearchContext } from '../../context/search'
 
 import { Container } from "./styled"
-import ResultBox from "../ResultBox"
 import SearchInfo from "../SearchInfo"
 import Takki from "../Takki"
+import ImageGrid from "../ImageGrid"
 
 const SearchResults = () => {
 
@@ -56,9 +56,8 @@ const SearchResults = () => {
 
             {data && data.items ?
 
-              data.items.map((item, index) => (
-                <ResultBox key={index} item={item}></ResultBox>
-              ))
+              <ImageGrid items={data.items}></ImageGrid>
+
               : null}
 
           </div>

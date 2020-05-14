@@ -5,14 +5,13 @@ export const Container = styled.div`
   grid-template-columns: 1fr auto;
   input {
     border: none;
-    background: var(--gray);
-    color: white;
+    background: var(--lightGray);
     font-size: var(--paragraphSize);
     box-sizing: border-box;
     padding: var(--smallPad);
     margin-right: var(--smallPad);
     ::placeholder {
-      color: white;
+      color: var(--gray);
     }
   }
 `

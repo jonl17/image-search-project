@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Box, Image } from "./styled"
+import { Wrap, Box, Image } from "./styled"
 
 const ResultBox = ({ item }) => {
 
   const [imageSrc, setImageSrc] = useState(item.link)
-
 
   useEffect(() => {
     setImageSrc(item.link)
@@ -15,9 +14,12 @@ const ResultBox = ({ item }) => {
   */
   return (
     item.link.includes("x-raw-image") || item.link.includes("lookaside") ? null :
-      <Box>
-        <Image onError={() => setImageSrc(item.image.thumbnailLink)} src={imageSrc}></Image>
-      </Box>
+      <Wrap>
+        <Box>
+          <Image onLoad={() => console.log("loaded")} onError={() => setImageSrc(item.image.thumbnailLink)} src={imageSrc}></Image>
+          <div className="image-text" dangerouslySetInnerHTML={{ __html: item.htmlTitle }}></div>
+        </Box>
+      </Wrap>
   )
 }
 

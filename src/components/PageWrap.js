@@ -4,12 +4,12 @@ import styled from "styled-components"
 import Provider from "../context/search"
 
 const Wrap = styled.div`
-  min-height: 100vh;
   box-sizing: border-box;
-  padding: var(--smallPad);
+  padding: var(--smallPad) var(--smallPad) var(--mediumPad) var(--smallPad);
   display: grid;
   grid-template-rows: auto 1fr;
   gap: var(--smallPad);
+  background: var(--white);
 `
 
 const PageWrap = ({ children }) => {
