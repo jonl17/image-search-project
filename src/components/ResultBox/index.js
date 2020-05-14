@@ -17,8 +17,14 @@ const ResultBox = ({ item }) => {
       <Wrap>
         <Box>
           <Image onError={() => setImageSrc(item.image.thumbnailLink)} src={imageSrc}></Image>
-          <div className="image-text" dangerouslySetInnerHTML={{ __html: item.htmlTitle }}></div>
+          <div className="info-wrap">
+            <div className="image-text" dangerouslySetInnerHTML={{ __html: item.htmlTitle }}></div>
+            <a href={item.image.contextLink} target="_blank" rel="noopener noreferrer">
+              <i className="gg-ereader"></i>
+            </a>
+          </div>
         </Box>
+        <link href='https://css.gg/ereader.css' rel='stylesheet'></link>
       </Wrap>
   )
 }

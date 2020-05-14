@@ -4,7 +4,7 @@ export const SearchContext = createContext()
 
 const Provider = ({ children }) => {
 
-  const [param, setParam] = useState("kosmos")
+  const [param, setParam] = useState("Kosmos & Kaos")
 
   const defaultUrl = (param) => {
     if (param.length > 1) {

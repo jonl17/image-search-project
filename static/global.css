@@ -7,9 +7,11 @@
   --gray: #000505;
   --lightGray: lightgray;
   --lighterGray: rgb(236, 234, 234);
-  --white: #FCFCFC;
+  --white: white;
   --black: #000505;
-  --paragraphSize: 16px;
+  --primary: rgb(241, 240, 240);
+  --secondary: rgb(236, 234, 234);
+  --paragraphSize: 18px;
   --mobile: 600px;
   --tablet: 850px;
 }
@@ -24,4 +26,5 @@ html, body, #__gatsby {
 p {
   font-size: var(--paragraphSize);
   color: var(--black);
+  letter-spacing: -.5px;
 }

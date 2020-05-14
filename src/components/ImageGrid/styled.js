@@ -5,6 +5,6 @@ export const Grid = styled.div`
   grid-auto-rows: var(--boxSize);
   gap: var(--smallPad);
   grid-template-columns: repeat( auto-fit, minmax(var(--boxSize), 1fr) );
-  background: var(--lighterGray);
-  padding: var(--smallPad) 0;
+  background: var(--primary);
+  padding: ${props => props.padding};
 `

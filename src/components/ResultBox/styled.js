@@ -11,14 +11,30 @@ export const Box = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  .image-text {
-    text-align: center;
+  .info-wrap {
     box-sizing: border-box;
-    padding: 0 var(--smallPad);
+    padding: 18px;
+    margin: 0 5%;
+    background: var(--white);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--smallPad);
+    justify-content: center;
+    align-items: center;
+    a {
+      color: gray;
+    }
+    a:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
+  
 `
 export const Image = styled.img`
   height: 100%;
+  width: 100%;
   object-fit: contain;
   justify-self: center;
 `
