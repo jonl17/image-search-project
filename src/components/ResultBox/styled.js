@@ -12,7 +12,7 @@ export const Box = styled.div`
   align-items: center;
   .info-wrap {
     box-sizing: border-box;
-    padding: 18px;
+    padding: 5%;
     margin: 0 5%;
     background: var(--white);
     border-radius: 10px;
