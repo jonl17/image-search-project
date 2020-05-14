@@ -16,7 +16,7 @@ const ResultBox = ({ item }) => {
     item.link.includes("x-raw-image") || item.link.includes("lookaside") ? null :
       <Wrap>
         <Box>
-          <Image onLoad={() => console.log("loaded")} onError={() => setImageSrc(item.image.thumbnailLink)} src={imageSrc}></Image>
+          <Image onError={() => setImageSrc(item.image.thumbnailLink)} src={imageSrc}></Image>
           <div className="image-text" dangerouslySetInnerHTML={{ __html: item.htmlTitle }}></div>
         </Box>
       </Wrap>

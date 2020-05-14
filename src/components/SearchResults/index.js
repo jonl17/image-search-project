@@ -4,7 +4,6 @@ import { SearchContext } from '../../context/search'
 
 import { Container } from "./styled"
 import SearchInfo from "../SearchInfo"
-import Takki from "../Takki"
 import ImageGrid from "../ImageGrid"
 
 const SearchResults = () => {
@@ -37,18 +36,10 @@ const SearchResults = () => {
       {!isLoading ?
         <>
           <SearchInfo
+            context={{ nextPageUrl, setApiUrl }}
             time={data.searchInformation.searchTime}
-            nextPageBtn={
-              nextPage && <Takki
-                label="Næstu 10"
-                action={() => setApiUrl(nextPageUrl(nextPage.cx + "&start=" + nextPage.startIndex + "&"))}></Takki>
-            }
-            previousPageBtn={
-              previousPage && <Takki
-                label="Fyrri 10"
-                action={() => setApiUrl(nextPageUrl(previousPage.cx + "&start=" + previousPage.startIndex + "&"))}
-              ></Takki>
-            }
+            nextPage={nextPage}
+            previousPage={previousPage}
           >
           </SearchInfo>
 

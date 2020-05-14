@@ -4,13 +4,18 @@ import { SearchContext } from "../../context/search"
 import { Container } from "./styled"
 import Takki from "../Takki"
 
-const SearchBox = ({ in: inProp }) => {
+const SearchBox = () => {
 
   const { setApiUrl, param, setParam, defaultUrl } = useContext(SearchContext)
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setApiUrl(defaultUrl(param))
+  }
+
   return (
     <>
-      <Container>
+      <Container onSubmit={(e) => handleSubmit(e)}>
         <input
           type="text"
           placeholder={param}
