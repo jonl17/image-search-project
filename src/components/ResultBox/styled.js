@@ -5,7 +5,6 @@ export const Wrap = styled.div`
 export const Box = styled.div`
   height: 100%;
   width: 100%;  
-  overflow: hidden;
   display: grid;
   grid-template-rows: 1fr 0.5fr;
   position: relative;
