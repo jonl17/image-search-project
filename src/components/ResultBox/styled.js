@@ -13,6 +13,7 @@ export const Box = styled.div`
   @media (max-width: 650px) {
     max-height: 65vh;
     min-height: 40vh;
+    grid-template-rows: 1fr auto;
   }
   .info-wrap {
     box-sizing: border-box;
