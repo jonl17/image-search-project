@@ -12,7 +12,7 @@ export const Box = styled.div`
   align-items: center;
   @media (max-width: 650px) {
     max-height: 65vh;
-    min-height: 50vh;
+    min-height: 40vh;
   }
   .info-wrap {
     box-sizing: border-box;
