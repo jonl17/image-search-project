@@ -1,4 +1,5 @@
-Smíðað með React, Gatsby, Netlify, Styled Components
+Smíðað með React, Gatsby, Netlify, Styled Components.
+
 Var líka að prófa mig áfram með React Context og CSS variables.
 
 ---
