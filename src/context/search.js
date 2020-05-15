@@ -4,7 +4,7 @@ export const SearchContext = createContext()
 
 const Provider = ({ children }) => {
 
-  const [param, setParam] = useState("Kettlingar")
+  const [param, setParam] = useState("Kisur")
 
   const defaultUrl = (param) => {
     if (param.length > 1) {
