@@ -6,10 +6,13 @@ export const Box = styled.div`
   height: 100%;
   width: 100%;  
   display: grid;
-  grid-template-rows: 1fr 0.6fr;
+  grid-template-rows: 1fr 0.5fr;
   position: relative;
   justify-content: center;
   align-items: center;
+  @media (max-width: 650px) {
+    min-height: 50vh;
+  }
   .info-wrap {
     box-sizing: border-box;
     padding: 5%;

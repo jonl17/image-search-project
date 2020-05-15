@@ -10,6 +10,7 @@ const Wrap = styled.div`
   grid-template-rows: auto 1fr;
   gap: var(--smallPad);
   background: var(--white);
+  min-height: 105vh;
 `
 
 const PageWrap = ({ children }) => {

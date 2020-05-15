@@ -1,8 +1,6 @@
-URL
-- [x] useContext change URL
-- [x] no change when param less than 2 char
+Nokkur atriði sem ég útfærði ekki, en væri sniðugt:
 
-FETCH
-- [ ] no fetch when param less than 2 char
-- [ ] fetch data
-- [ ] display data
+- Optimiza myndir ef þær eru of stórar.
+- Betri villumeðhöndlun á vandamálamyndum.
+- Sort á myndaniðurstöður.
+- Hægt að ráða hversu margar niðurstöður eru sóttar, max 15-20.

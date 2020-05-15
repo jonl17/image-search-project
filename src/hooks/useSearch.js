@@ -5,14 +5,14 @@ const useSearch = (url) => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    console.log("calling")
     const fetchData = async () => {
+      setIsLoading(true)
       const resp = await fetch(url)
       const data = await resp.json()
       setData(data)
       setIsLoading(false)
     }
-
+    console.log(url)
     fetchData()
   }, [url])
 

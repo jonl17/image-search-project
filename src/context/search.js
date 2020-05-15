@@ -15,6 +15,7 @@ const Provider = ({ children }) => {
     }
   }
 
+  // köllum þetta nextPage en virkar líka fyrir previous page
   const nextPageUrl = (nextPageCx) => {
     if (param.length > 1) {
       return "https://content.googleapis.com/customsearch/v1?cx=" + nextPageCx + "&q="

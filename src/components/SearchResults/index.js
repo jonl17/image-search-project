@@ -17,7 +17,6 @@ const SearchResults = () => {
 
   useEffect(() => {
 
-    console.log(data)
     if (!isLoading) {
       if (data.queries.nextPage) {
         setNextPage({ ...data.queries.nextPage[0] })
@@ -33,24 +32,20 @@ const SearchResults = () => {
 
   return (
     <Container>
+
+      {data && <SearchInfo
+        context={{ nextPageUrl, setApiUrl }}
+        time={data.searchInformation.formattedSearchTime}
+        nextPage={nextPage}
+        previousPage={previousPage}
+      >
+      </SearchInfo>}
+
       {!isLoading ?
         <>
-          <SearchInfo
-            context={{ nextPageUrl, setApiUrl }}
-            time={data.searchInformation.searchTime}
-            nextPage={nextPage}
-            previousPage={previousPage}
-          >
-          </SearchInfo>
-
-
           {data && data.items ?
-
             <ImageGrid items={data.items}></ImageGrid>
-
             : null}
-
-
         </>
         : <p>...hleður</p>}
     </Container >
