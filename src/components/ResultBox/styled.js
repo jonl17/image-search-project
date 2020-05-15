@@ -11,9 +11,7 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 650px) {
-    max-height: 65vh;
-    min-height: 40vh;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: initial;
   }
   .info-wrap {
     box-sizing: border-box;
@@ -44,5 +42,6 @@ export const Image = styled.img`
   @media (max-width: 650px) {
     box-sizing: border-box;
     padding: 15px;
+    height: auto;
   }
 `

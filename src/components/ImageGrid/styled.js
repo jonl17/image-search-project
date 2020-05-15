@@ -25,7 +25,7 @@ export const Grid = styled.div`
     gap: var(--smallPad);
     @media (max-width: 650px) {
       gap: var(--mediumPad);
-      grid-auto-rows: 1fr;
+      grid-auto-rows: max-content
     }
   }
 
