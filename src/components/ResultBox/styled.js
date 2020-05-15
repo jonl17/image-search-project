@@ -11,7 +11,7 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 650px) {
-    min-height: 50vh;
+    height: 50vh;
   }
   .info-wrap {
     box-sizing: border-box;
