@@ -12,7 +12,6 @@ const useSearch = (url) => {
       setData(data)
       setIsLoading(false)
     }
-    console.log(url)
     fetchData()
   }, [url])
 
